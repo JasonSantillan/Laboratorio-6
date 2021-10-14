@@ -78,6 +78,8 @@ bool MapGenerator::crearObjetosJuego(string _path)
 						bomberwomanPosicionY = y;
 					}
 
+					//pilaObjetosJuegoMurosMetal.Insertar((GameActor*)objetoNuevo);
+
 					break;
 				case '1':
 					objetoNuevo = new MuroMetal(texturaMuroCeramica, tileNuevo);

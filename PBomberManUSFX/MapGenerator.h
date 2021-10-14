@@ -10,11 +10,14 @@
 #include "SueloCesped.h"
 #include "Tile.h"
 #include "TilesGraph.h"
+#include "Pila.h"
 
 class MapGenerator
 {
 private:
 	vector<GameObject*> vectorObjectosJuego;
+	//Pila<GameObject*> pilaObjetosJuegoMurosMetal = Pila<GameObject*>(500);
+
 	int anchoPantalla;
 	int altoPantalla;
 	SDL_Renderer* renderer;

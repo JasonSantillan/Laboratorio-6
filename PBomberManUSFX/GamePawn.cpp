@@ -21,7 +21,7 @@ void GamePawn::render()
 
 void GamePawn::update()
 {
-	GamePawn::render();
+	GameActor::update();
 }
 
 void GamePawn::deleteGameObjet()

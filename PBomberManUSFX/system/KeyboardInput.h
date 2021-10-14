@@ -7,6 +7,7 @@
  *
  */
 
+#include <iostream>
 #include <SDL_keycode.h>
 #include <map>
 

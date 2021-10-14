@@ -19,7 +19,7 @@ GameActor::GameActor() :GameObject() {
 	terrestre = true;
 	subterraneo = false;
 
-	velocidad = 5;
+	velocidad = 1;
 	energia = 100;
 	vidas = 3;
 
@@ -48,7 +48,7 @@ GameActor::GameActor(Texture* _textura, Tile* _tileActual) :GameObject() {
 	terrestre = true;
 	subterraneo = false;
 
-	velocidad = 5;
+	velocidad = 1;
 	energia = 100;
 	vidas = 3;
 

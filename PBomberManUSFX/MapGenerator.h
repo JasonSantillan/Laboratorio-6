@@ -11,6 +11,11 @@
 #include "Tile.h"
 #include "TilesGraph.h"
 #include "Pila.h"
+//----------------------------------------------------------------------------------
+// Laboratorio #6
+
+#include <map>
+//----------------------------------------------------------------------------------
 
 class MapGenerator
 {
@@ -22,7 +27,18 @@ private:
 	int altoPantalla;
 	SDL_Renderer* renderer;
 	TilesGraph* tilesGraph;
+
+
+
+
 public:
+	//----------------------------------------------------------------------------------
+	// Laboratorio #6
+	map<int, GameObject*> mCeramicaPares;
+
+	//----------------------------------------------------------------------------------
+
+
 	// Constructores y destructores
 	MapGenerator();
 	MapGenerator(SDL_Renderer* _renderer, int _anchoPantalla, int _altoPantalla, TilesGraph* _tilesGraph);

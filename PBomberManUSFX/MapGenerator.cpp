@@ -86,11 +86,24 @@ bool MapGenerator::crearObjetosJuego(string _path)
 					break;
 				case '2':
 					objetoNuevo = new MuroCeramica(texturaMuroMetal, tileNuevo);
+
+					//----------------------------------------------------------------------------------
+					// Laboratorio #6
+
+					if (x % 2 == 0 && y % 2 == 0) {
+						int key = 0;
+						key = y * TilesGraph::anchoTilesGraph + x;
+						mCeramicaPares[key] = objetoNuevo;
+					}
+
+					//----------------------------------------------------------------------------------
+
 					break;
 					/*case 'B':
 						objetoNuevo = new Bomberman(texturaBomberman, tileNuevo);
 						break;*/
 				}
+
 
 				if (objetoNuevo != nullptr) {
 					((GameActor*)objetoNuevo)->setPosicionX(x * 34);
